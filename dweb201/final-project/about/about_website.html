@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col s12">
+      <h5 class="center-align" style="margin-top:50px;margin-bottom:30px;font-weight:bold;">About Website</h5>
+        <p class="center-align">
+                Minimnya jumlah wisatawan wisata bahari akibat kurangnya informasi dan aksesibilitas,
+            terutama bagi pulau-pulau terluar.Informasi yang akurat tentang objek wisata pada kota-kota di Indonesia masih kurang dan objek
+            wisata-nya ada yang belum cukup dikenal oleh wisatawan lokal maupun turis asing.
+        </p>
+        <p class="center-align">
+                indonesiatouricket.com adalah website yang berisi informasi tempat wisata Indonesia. Website ini juga salah satu
+            dari sekian banyak situs wisata yang membahas seputar dunia pariwisata. Adanya website ini tergerak ingin mempopulerkan
+            dan memperkenalkan wisata di Indonesia ke mata umum melalui media online.
+        </p>
+        <p class="center-align">
+                Content wisata yang di sajikan ini dari Wisata Alam, Wisata Air, Wisata Modern maupun Wisata Edukasi. Dan semampu saya
+            indonesiatouricket.com akan memberikan content yang informatif, asik, dan tentunya ringan bagi pembaca namun mudah di pahami.
+        <p class="center-align">
+                Adanya website ini diharapkan akan membantu anda semua dalam menentukan tempat wisata yang hendak kalian kunjungi.
+            Mulai dari tentang wisata, lokasi wisata, jam operasional, fasilitas tempat wisata hingga harga tiket wisata.
+        </p>
+    </div>
+  </div>
+</div>
+
+  <footer class="page-footer warna-baru" style="padding-top: 15px;padding-bottom: 15px;position: fixed;bottom: 0;width: 100%;z-index: 999;">
+      <div class="container white-text">
+        <div class="menu">
+          <a class="klik_menu" id="about_me">
+              <strong>Created By Ronny Jubhari</strong>
+              <img src="img/profil.png" style="margin:3px 0 -10px 5px;">
+          </a>
+        </div>
+        <div class="blink">
+          <span style="margin-left:-30px;"><b style="font-size:20px;">&larr;</b> Click for more about me</span>
+        </div>
+      </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.klik_menu').click(function(){
+        var menu = $(this).attr('id');
+        if(menu == "about_me"){
+          $('#data_output').load('about/about_me.html');
+        }
+      });
+    });
+  </script>

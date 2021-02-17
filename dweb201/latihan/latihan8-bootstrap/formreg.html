@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Registrasi Member</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="formreg.html">Registrasi Member</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="formreg.html">Registrasi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Registrasi</h1>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <form class="needs-validation" novalidate>
+  <div class="row">
+    <div class="col">
+
+      <div class="form-group">
+        <label class="form-control-label" for="validationCustom01">Nama Lengkap</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Input Full Name" required>
+        <div class="invalid-feedback">Tidak boleh kosong</div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        <div class="invalid-feedback">Tidak boleh kosong</div>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Kelamin</label>
+        <br>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" name="customRadioInline1" id="customRadioInline1" value="option1" required>
+          <label class="custom-control-label" for="customRadioInline1">
+            Laki-Laki
+          </label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" name="customRadioInline1" id="customRadioInline2" value="option2" required>
+          <label class="custom-control-label" for="customRadioInline2">
+            Perempuan
+          </label>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <div class="invalid-feedback">Tidak boleh kosong atau salah penulisan Email</div>
+      </div>
+
+      <div class="form-group">
+        <label for="example-tel-input" class="col-form-label">Nomor Telepon</label>
+        <input type="number" class="form-control" id="example-tel-input" placeholder="Enter phone number" required>
+        <div class="invalid-feedback">Tidak boleh kosong atau salah penulisan Nomor Telepon</div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="date" class="col-form-label">Tanggal Lahir</label>
+    <div>
+      <input class="form-control" id="date" name="date" placeholder="yyyy-mm-dd" type="text" required>
+      <div class="invalid-feedback">Tidak boleh kosong</div>
+    </div>
+      </div>
+      </div>
+
+
+    <div class="col-md-auto col-lg-6">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Profesi</label>
+        <select class="custom-select text-body" id="exampleFormControlSelect1" required>
+          <option selected></option>
+          <option>Pelajar</option>
+          <option>Mahasiswa</option>
+          <option>Karyawan/Pegawai</option>
+          <option>Professional</option>
+          <option>Wirausaha</option>
+          <option>Lainnya</option>
+        </select>
+        <div class="invalid-feedback">Silahkan pilih salah satu</div>
+      </div>
+
+      <div class="form-group">
+         <label for="validationTextarea">Deskripsi Singkat Tentang Anda</label>
+         <textarea class="form-control" id="text" name="text" rows="5" placeholder="Deskripsi singkat tentang Anda dalam 160 karakter" maxlength="160" required></textarea>
+         <span class="float-right" id="count_message"></span>
+         <div class="invalid-feedback">
+            Silahkan masukkan deskripsi tentang Anda disini dan tidak boleh lebih dari 160 karakter.
+        </div>
+      </div>
+      <br>
+
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="custom-control-label" for="invalidCheck2">
+            Saya telah memahami dan menyetujui aturan privasi
+          </label>
+          <div class="invalid-feedback">Anda harus mencentangnya jika ingin lanjut.</div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="submit" class="btn btn-primary" name="action">
+          Registrasi
+          <i class="material-icons right small" style="margin-left:5px;">send</i>
+        </button>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </form>
+  </div>
+
+  <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+      <script type="text/javascript">
+      $('#date').datepicker({
+      format:"yyyy-mm-dd",
+      weekStart:0,
+      startDate:"1920-01-01",
+      todayBtn:"linked",
+      language:"it",
+      autoclose:true,
+      todayHighlight:true
+      });
+
+      </script>
+
+      <script type="text/javascript">
+      var text_max = 160;
+      $('#count_message').html('0 / ' + text_max );
+
+      $('#text').keyup(function() {
+      var text_length = $('#text').val().length;
+      var text_remaining = text_max - text_length;
+
+      $('#count_message').html(text_length + ' / ' + text_max);
+      });
+      </script>
+</body>
+</html>

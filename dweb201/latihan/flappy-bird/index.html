@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="css/style.css" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flappy Bird Game</title>
+  </head>
+  <body style="height: 100vh; background:grey; text-align: center;">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container left-align">
+        <a href="index.html" class="brand-logo black-text">Flappy Bird</a>
+      </div>
+    </nav>
+    <canvas id="c" width="400" height="400" style="margin-top:50px"></canvas>
+<!--
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://flappy-bird.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//flappy-bird.disqus.com/count.js" async></script> -->
+    <script>
+      context = c.getContext("2d");
+      const bird = new Image();
+      bird.src = "bird.png";
+      birdX = birdDY = score = bestScore = 0;
+      interval = birdSize = pipeWidth = topPipeBottomY = 24;
+      birdY = pipeGap = 200;
+      canvasSize = pipeX = 400;
+      c.onclick = () => (birdDY = 9) ;
+      setInterval(() => {
+        context.fillStyle = "skyblue";
+        context.fillRect(0,0,canvasSize,canvasSize); // Draw sky
+        birdY -= birdDY -= 0.5; // Gravity
+        context.drawImage(bird, birdX, birdY, birdSize * (524/374), birdSize); // Draw bird
+        context.fillStyle = "green";
+        pipeX -= 8; // Move pipe
+        pipeX < -pipeWidth && // Pipe off screen?
+          ((pipeX = canvasSize), (topPipeBottomY = pipeGap * Math.random())); // Reset pipe and randomize gap.
+        context.fillRect(pipeX, 0, pipeWidth, topPipeBottomY); // Draw top pipe
+        context.fillRect(pipeX, topPipeBottomY + pipeGap, pipeWidth, canvasSize); // Draw bottom pipe
+        context.fillStyle = "black";
+        context.fillText(score++, 9, 25); // Increase and draw score
+        bestScore = bestScore < score ? score : bestScore; // New best score?
+        context.fillText(`Best: ${bestScore}`, 9, 50); // Draw best score
+        (((birdY < topPipeBottomY || birdY > topPipeBottomY + pipeGap) && pipeX < birdSize * (524/374))// Bird hit pipe?
+         || birdY > canvasSize) && // Bird falls off screen
+        ((birdDY = 0), (birdY = 200), (pipeX = canvasSize), (score = 0)); // Bird died
+      }, interval)
+    </script>
+
+  </body>
+</html>

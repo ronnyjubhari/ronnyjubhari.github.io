@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Registrasi Member</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="redchef white-text sticky-bar" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Registrasi Member</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h4 class="redchef-text center-align">Registrasi</h4>
+      <br>
+      <form >
+        <div class="row">
+          <div class="col m6 s12">
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="nama" name="nama" type="text" class="validate" required>
+              <label for="nama">Nama Lengkap</label>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">https</i>
+              <input id="password" name="password" type="password" class="validate" required>
+              <label for="password">Password</label>
+            </div>
+
+            <span class="text4">Jenis Kelamin</span>
+            <br>
+            <div class="input-field inline">
+              <div>
+                <label class="text4">
+                  <input class="with-gap" name="lp" type="radio" value="L" required />
+                  <span>Laki-laki</span>
+                </label>
+              </div>
+
+              <div>
+                <label class="text4">
+                  <input class="with-gap" name="lp" type="radio" value="P" required />
+                  <span>Perempuan</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input id="email" name="email" type="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">phone</i>
+              <input id="phone" name="phone" type="number" class="validate" required>
+              <label for="phone">Nomor Telepon</label>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" id="tgl_lahir" name="tgl_lahir" class="datepicker" required>
+              <label for="tgl_lahir">Tanggal Lahir</label>
+            </div>
+
+          </div>
+
+          <div class="col m6 s12">
+            <div class="input-field">
+              <select class="" id="job" name="job">
+                <option value="" disabled selected></option>
+                <option value="1">Pelajar</option>
+                <option value="2">Mahasiswa</option>
+                <option value="3">Karyawan/Pegawai</option>
+                <option value="4">Professional</option>
+                <option value="5">Wirausaha</option>
+                <option value="6">Lainnya</option>
+              </select>
+              <label for="job">Profesi</label>
+            </div>
+
+            <br>
+            <div class="input-field text4">
+              <i class="material-icons prefix">description</i>
+              <textarea class="materialize-textarea" id="deskripsi" name="deskripsi" rows="8" cols="80" data-length="160" maxlength="160" required></textarea>
+              <label for="deskripsi">Deskripsi Singkat Tentang Anda</label>
+            </div>
+
+            <br>
+            <div>
+              <label>
+                <input type="checkbox" id="setuju" name="setuju" class="filled-in" required />
+                <span class="text4">Saya telah memahami dan menyetujui aturan privasi</span>
+              </label>
+            </div>
+
+            <br>
+            <div>
+              <button class="btn waves-effect waves-light right" type="submit" name="action">Registrasi
+              <i class="material-icons right">send</i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+         var dateElems = document.querySelectorAll('.datepicker');
+         var instances = M.Datepicker.init(dateElems, {format:'yyyy-mm-dd'});
+
+         var elems = document.querySelectorAll('select');
+         var instances = M.FormSelect.init(elems);});
+
+       $(document).ready(function() {
+         $('textarea#deskripsi').characterCounter();
+       });
+
+    </script>
+
+  </body>
+</html>

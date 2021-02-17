@@ -1,0 +1,78 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+.star{color: gold;}
+.space{margin-bottom: 35px;}
+strong.green{color: green;}
+strong.orange{color: rgb(255, 115, 0);}
+strong.red{color: red;}
+.tabs .tab a {color: #000;/*Custom Text Color*/}
+.tabs .tab a:hover {color:red;/*Custom Color On Hover*/}
+.tabs .tab a:focus.active {color:red;/*Custom Text Color While Active*/background-color: rgba(38, 166, 154, 0.2);/*Custom Background Color While Active*/}
+.tabs .indicator {background-color:#26a69a;/*Custom Color Of Indicator*/}
+.garis{width: 80%;margin-top:70px;margin-bottom:30px;}
+.user-profile{border-radius: 50%;padding: 10px;width: 70%;}
+.box-review2{color: #000;margin-top:-10px;}
+.sty{list-style-type:disc;}
+.title-second{font-size: 1.5em;line-height: 30px;font-weight: bold;margin-bottom: 20px;text-align: left;}
+.ukuran{size:24px;}
+.warna-huruf{color: #000;font-weight: bold;}
+.warna-huruf2{color: #000;}
+.warna{border: 0.5px solid #212529;}
+.poster-image{border: 5px solid #000;border-radius: 5px;}
+ .icon-block{padding:0 15px;}
+ .icon-block .material-icons{font-size: inherit;}
+ .redchef{background-color:#651fff;}
+.redchef:hover{background-color:#651fff;}
+ .redchef-text{color:#f90808;}
+ .collection{border:1px solid #000;}
+ .collection a.collection-item{color: #651fff;}
+ .collection .collection-item{border-bottom:1px solid #000;}
+ .collection a.collection-item:not(.active):hover{background-color:#651fff;color:#fff;}
+ .collapsible.popout > li{-webkit-box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 5px 10px 10px rgba(252, 14, 14, 0.12);box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 5px 10px 10px rgba(252, 14, 14, 0.12);margin: 0 24px;-webkit-transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+ .collapsible.popout>li.active{-webkit-box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 10px 10px 10px rgba(252, 14, 14, 0.12);box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 10px 10px 10px rgba(252, 14, 14, 0.12);margin: 16px 0;}
+ .collapsible-header{border-bottom:1px solid #000;}
+ .btn-floating{border:1px solid #fff;top:13px;left:-10px;background-color:#651fff;}
+ .btn-floating:hover{background-color:#651fff;}
+ ol.sty{list-style-type:disc;}
+ h6{margin-left:25px;font-weight:bold;}
+ .btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus{background-color:#651fff;}
+ a.btn-small{background-color:#651fff;color:#fff;margin-left:20px;margin-bottom:20px;}
+ /*a.btn-small:hover{background-color:#651fff;color:#fff;}*/
+ a.btn{margin: 20px auto;display: table;background:#651fff;color:#fff;text-transform:none;height:30px;line-height: normal;padding-top: 5px;}
+ a.btn:hover{background:#651fff;color:#fff;}
+ a.btn-small:hover{background:#fff;color:#651fff;}
+ a.btn-small:before,a.btn-small:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background: #651fff;transition:400ms ease all;}
+ a.btn-small:after{right:inherit;top:inherit;left:0;bottom:0;}
+ a.btn-small:hover:before,a.btn-small:hover:after{width:100%;transition:800ms ease all;}
+ .card .card-content{padding:20px;text-align:center;margin-top:20px;margin-bottom:20px;}
+ .card .card-content .card-title{font-weight:bold;}
+ .text{font-weight: bold;}
+ #text2{font-weight: bold;margin-right: 15px;}
+ .text3{font-weight:bold;margin-left:60px;margin-right:60px;}
+ a{color:#651fff;}
+ .materialboxed,.materialboxed.active{cursor:pointer;}
+#materialbox-overlay{background-color:#fff;}
+.background{height:200px;}
+.collection .collection-item.avatar{min-height: 60px;}
+.collection .collection-item.avatar p{margin-top:10px;}
+.garis_vertikal{width:2px;height:150px;background-color:red;}
+.garis_vertikal2{width:2px;height:220px;background-color:red;}
+.abouttext{width: 400px;padding-left: 20px;padding-top:20px;}
+.abouttext2{width: 550px;padding-left:20px;padding-top:10px;}
+@media only screen and (max-width:992px){nav .brand-logo{text-align: center;font-size: 20px;}.brandjudul img{display: none;}
+.black-text{color: #000;}
+nav ul a, nav .brand-logo { color: #444;}
+p{line-height: 2rem;}
+.sidenav-trigger {color: #26a69a;}
+.parallax-container {min-height: 380px;line-height: 0;height: auto;color: rgba(255,255,255,.9);}
+.parallax-container .section {width: 100%;}
+@media only screen and (max-width : 992px) {.parallax-container .section {position: absolute;top: 40%;}#index-banner .section {top: 10%;}}
+@media only screen and (max-width : 600px) {#index-banner .section {top: 0;}#movie_detail .row img{display: block; margin: auto;}iframe{max-width: 320px;max-height:300px;margin: auto;display: block;}#in,#in2{text-align: center;}}
+.icon-block {padding: 0 15px;}
+.icon-block .material-icons {font-size: inherit;}
+footer.page-footer{margin: 0;}

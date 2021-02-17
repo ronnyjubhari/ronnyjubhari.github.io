@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+body {
+  background-color: #10ecda;
+  color: #000;
+  font-family: 'Pangolin', cursive;
+}
+
+a:link, a:visited {
+  color: #fc0808;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a span{
+  transition: 0.5s;
+}
+
+a:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #00b3ff,
+               0 0 20px #00b3ff,
+               0 0 40px #00b3ff,
+               0 0 80px #00b3ff,
+               0 0 120px #00b3ff,
+               0 0 160px #00b3ff;
+}
+
+.heading {
+  text-align: center;
+  border: #000 1px solid;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ec5610;
+}
+
+hr{
+  color: #fff;
+}
+
+.nama{
+  text-align: center;
+  border: #000 1px solid;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.nav{
+  margin-left: 10px;
+}
+
+.link {
+  list-style-type: none;
+}
+
+.menu {
+  width: 300px;
+  background-color: #fff;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+#gambar-resep {
+  width: 350px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.green-gradient{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4e391+0,64e204+5,64e204+55,61c419+77,61c419+96,61c419+96,b4e391+100 */
+  background: #b4e391; /* Old browsers */
+  background: -moz-linear-gradient(left,  #b4e391 0%, #64e204 5%, #64e204 55%, #61c419 77%, #61c419 96%, #61c419 96%, #b4e391 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #b4e391 0%,#64e204 5%,#64e204 55%,#61c419 77%,#61c419 96%,#61c419 96%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #b4e391 0%,#64e204 5%,#64e204 55%,#61c419 77%,#61c419 96%,#61c419 96%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,ff6600+18,ff6600+18,ff6600+23,e86c57+68,ea2803+87,ea2803+88,c72200+100 */
+  background: #f3c5bd; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f3c5bd 0%, #ff6600 18%, #ff6600 18%, #ff6600 23%, #e86c57 68%, #ea2803 87%, #ea2803 88%, #c72200 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #f3c5bd 0%,#ff6600 18%,#ff6600 18%,#ff6600 23%,#e86c57 68%,#ea2803 87%,#ea2803 88%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #f3c5bd 0%,#ff6600 18%,#ff6600 18%,#ff6600 23%,#e86c57 68%,#ea2803 87%,#ea2803 88%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=1 ); /* IE6-9 */
+}
+
+/* menu utama */
+.blockmenu{
+  width: 240px;
+  height: 150px;
+  list-style: none;
+  text-align: center;
+  float: left;
+  margin: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px grey;
+  overflow: hidden;
+}
+
+.iconmenu{
+  width: 240px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.iconmenuimg{
+  width: 100%;
+}
+
+.textmenu{
+  padding: 5px;
+  font-size: 20px;
+}
+
+.row{
+  display: flex;
+}
+
+.feature-image{
+  flex: 20%;
+  min-width: 200px;
+  height: 625px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  float: left;
+}
+
+.feature-image2{
+  flex: 20%;
+  width: 330px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  float: left;
+}
+
+.img-responsif{
+  height: 100%;
+}
+
+.content{
+  flex: 70%;
+}
+
+.info-resep{
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tombol{
+    position: relative;
+    display: inline-block;
+    padding: 8px 10px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tombol2{
+    position: relative;
+    display: inline-block;
+    padding: 8px 10px;
+    background: #fff;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tombol2-space{
+    position: absolute;
+    display: inline-block;
+    padding: 8px 10px;
+    background: #fff;
+    right: 80px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tombol:hover, .tombol2:hover, .tombol2-space:hover{
+  background: #000;
+}
+
+.info{
+  margin-top: 50px;
+}
+
+.info-pendek{
+  margin-top: 70px;
+}
+
+.detail{
+  margin-top: 80px;
+}
+
+.detail-pendek{
+  margin-top: 130px;
+}
+
+#tentang{
+  margin-top: 80px;
+}
+
+.tentang2{
+  margin-bottom: 100px;
+}
+
+#tentang3{
+  margin-bottom: 90px;
+}
+
+
+@media screen and (max-width: 600px){
+  .row{
+    display: block;
+  }
+
+  .feature-image{
+    width: 100%;
+    height: 300px;
+    float: none;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  .menu{
+    display: block;
+    padding: 0px;
+  }
+
+  .blockmenu{
+    width: 80%;
+    height: 150px;
+  }
+
+  .iconmenu{
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+  }
+  .tombol2-space{margin-top:170px;right:30px;}
+}

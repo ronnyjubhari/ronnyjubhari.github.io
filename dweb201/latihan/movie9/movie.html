@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="css/style.css" media="screen,projection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="black" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo white-text">PWEB Movie</a>
+        <ul class="topnav right hide-on-med-and-down">
+          <li><a href="index.html#playing" class="white-text">Now Playing</a></li>
+          <li><a href="index.html#upcoming" class="white-text">Up Coming</a></li>
+          <li><a href="index.html#popular" class="white-text">Popular</a></li>
+          <li><a href="index.html#toprated" class="white-text">Top Rated</a></li>
+          <li><a href="search-movie.html" class="white-text">Search Movie</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="index.html#playing" class="black-text">Now Playing</a></li>
+          <li><a href="index.html#upcoming" class="black-text">Up Coming</a></li>
+          <li><a href="index.html#popular" class="black-text">Popular</a></li>
+          <li><a href="index.html#toprated" class="black-text">Top Rated</a></li>
+          <li><a href="search-movie.html" class="black-text">Search Movie</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container" >
+      <div id="backdrop">
+
+      </div>
+    </div>
+
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div id="movie_detail"> </div>
+
+        <hr class="warna garis">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a class="active warna-huruf" href="#trailer">Trailer</a></li>
+              <li class="tab col s4"><a class="warna-huruf" href="#synopsis">Synopsis</a></li>
+              <li class="tab col s4"><a class="warna-huruf" href="#reviews">Reviews</a></li>
+            </ul>
+          </div>
+          <div id="trailer" class="col s12" style="margin-top:20px;"> </div>
+          <div id="synopsis" class="col s12"> </div>
+          <div id="reviews" class="col s12"> </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://catalogmovie.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+    </div>
+
+   <script id="dsq-count-scr" src="//catalogmovie.disqus.com/count.js" async></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script type="text/javascript" src="js/materialize.min.js"></script>
+   <script type="text/javascript" src="js/init.js"></script>
+   <script type="text/javascript" src="js/api.js"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script type="text/javascript" src="js/tmdb.js"></script>
+
+   <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var id = urlParams.get("id");
+        getMovie( id );
+      });
+   </script>
+
+   <script type="text/javascript">
+     $(document).ready(function(){
+     $('.tabs').tabs();
+     });
+   </script>
+
+   <script type="text/javascript">
+      var elem = document.querySelector('.collapsible.expandable');
+      var instance = M.Collapsible.init(elem, {
+      accordion: false
+      });
+   </script>
+
+   <script>
+      getReviews();
+      getCredits();
+      getTrailer();
+   </script>
+
+  </body>
+</html>

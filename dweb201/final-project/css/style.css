@@ -1,0 +1,59 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ /* table, caption, tbody, tfoot, thead, tr, th, td {
+    all: unset;
+} */
+table, caption, tbody, tfoot, thead, tr, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;margin-top: 30px;}
+.card,.card-image,.responsive-img{width:410px;min-height: 250px;}
+.tabel{border: 1px solid #000;padding: 10px;color:#000;}
+.space{margin-bottom:-10px;}
+.block { width: 100%; margin-bottom: 5px; margin-top: 5px;}
+label{color:#000;}
+.garis{border: 1px solid #000;}
+.warna-baru{background-color: #182b3c}
+.icon-block{padding:0 15px;}
+.icon-block .material-icons{font-size: inherit;}
+.redchef{background-color:#f90808;}
+.redchef-text{color:#f90808;}
+.collection{border:1px solid #182b3c;width:400px;}
+.collection:hover{position: relative;left: 20px;}
+.collection a.collection-item{color: #fff;}
+.collection .collection-item{border-bottom:1px solid #182b3c; }
+.collection a.collection-item:not(.active){background-color:#182b3c;color:#fff;}
+.collection a.collection-item:not(.active):hover{background-color:#2196F3;color:#fff;font-weight: bold;}
+.collapsible.popout > li{-webkit-box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 5px 10px 10px rgba(252, 14, 14, 0.12);box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 5px 10px 10px rgba(252, 14, 14, 0.12);margin: 0 24px;-webkit-transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+.collapsible.popout>li.active{-webkit-box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 10px 10px 10px rgba(252, 14, 14, 0.12);box-shadow:10px 10px 10px 10px rgba(252, 14, 14, 0.12),10px 10px 10px 10px rgba(252, 14, 14, 0.12);margin: 16px 0;}
+.collapsible-header{border-bottom:1px solid #000;}
+.btn-floating{border:1px solid #fff;top:13px;left:-10px;background-color:#2196F3;}
+.btn-floating:hover{background-color:#2196F3;}
+ol.sty{list-style-type:disc;}
+h6{margin-left:25px;font-weight:bold;}
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus{background-color:#2196F3;}
+a.btn-small{background-color:#f90808;color:#fff;margin-left:20px;margin-bottom:20px;}
+/*a.btn-small:hover{background-color:#f90808;color:#fff;}*/
+a.btn-small:hover{background:#fff;color:#f90808;}
+a.btn-small:before,a.btn-small:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background: #f90808;transition:400ms ease all;}
+a.btn-small:after{right:inherit;top:inherit;left:0;bottom:0;}
+a.btn-small:hover:before,a.btn-small:hover:after{width:100%;transition:800ms ease all;}
+.card .card-content{padding:20px;text-align:center;margin-top:20px;margin-bottom:20px;}
+.card .card-content .card-title{font-weight:bold;}
+.text{font-weight: bold;}
+#text2{font-weight: bold;margin-right: 15px;}
+.text3{font-weight:bold;margin-left:60px;margin-right:60px;}
+a{color:#fff;}
+a:hover{font-weight: bold;color:#03a9f4;cursor: pointer;}
+strong:hover{font-weight: bold;color:#03a9f4;cursor: pointer;}
+.efek{margin-left: -30px;}
+.efek:hover{background-color: #03a9f4;padding: 10px 20px 15px 20px;width:250px;border-radius: 50px;margin-left: 5px;font-weight: bold;}
+.materialboxed,.materialboxed.active{cursor:pointer;}
+#materialbox-overlay{background-color:#fff;}
+.background{height:200px;}
+.collection .collection-item.avatar{min-height: 60px;}
+.collection .collection-item.avatar p{margin-top:10px;}
+.kepala{background-color: #182b3c;width:350px;color: #fff;padding:10px 15px 10px 15px;height: 40px;margin-bottom: auto;text-align: center;}
+@media only screen and (max-width:992px){.blink span b{margin-left:100px;}th{min-width:300px;}.collection,.collection-item{margin:auto;display: block;width:300px;}nav .brand-logo{text-align: center;margin-left: -25px;font-size: 20px;}.brandjudul img{margin-left:-30px;margin-top: 8px;}}
