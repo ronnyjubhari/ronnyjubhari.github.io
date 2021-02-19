@@ -292,7 +292,7 @@
 
           var tb_header = `
               <div style="margin-bottom:35px;"></div>
-                <div class="col m6 s12" style="margin-top:20px;">
+                <div class="col m5 s12" style="margin-top:20px;">
                   <div class="card waves-effect waves-block waves-light z-depth-3">
                     <div class="card-image">
                       <img class="responsive-img"
@@ -306,20 +306,17 @@
                   </div>
                 </div>
 
-                <div class="col m6 s12">
-                <div class="card">
-                    <table id="tb_citylist">
-                    <thead>
-                      <tr>
-                        <th class="kepala">Kota Wisata</th>
-                      </tr>
-                    </thead>
-                      <tbody>
-                      </tbody>
-                    </table>
+                <div class="col m7 s12">
+                  <div class="card warna-baru">
+                    <div class="card-content white-text">
+                    <span class="card-title">Kota Wisata</span>
+                      <table id="tb_citylist">
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
-                </div>
-              </div>
               </div>
               `;
 
@@ -334,7 +331,7 @@
               "data": data.kota,
               "columns": [
                 { "render": function(data, type, row, meta) {
-                              data = '<div class="collection space"><a class="collection-item" href="wisata.html?id=' + row.k_code +'"><span style="font-size:26px;margin-right:10px;">&ogt;</span>' + row.nama_kota + '</a></div> ';
+                              data = '<a href="wisata.html?id=' + row.k_code +'"><span style="font-size:26px;margin-right:10px;">&ogt;</span>' + row.nama_kota + '</a> ';
                               return data;
                             } }
               ]
