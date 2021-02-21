@@ -12,10 +12,10 @@ function getCityList() {
               <div class="card waves-effect waves-block waves-light z-depth-3">
                 <div class="card-image">
                   <img class="responsive-img"
-                       src="img/wisata_1080.jpg"
-                       srcset="img/wisata_480.jpg 480w,
-                               img/wisata_720.jpg 720w,
-                               img/wisata_1080.jpg 1080w"
+                       src="img/wisata_1080.png"
+                       srcset="img/wisata_480.png 480w,
+                               img/wisata_720.png 720w,
+                               img/wisata_1080.png 1080w"
                        size="100vw"
                        alt="Wisata Indonesia">
                 </div>
@@ -23,16 +23,19 @@ function getCityList() {
             </div>
 
             <div class="col m6 s12">
-                <table id="tb_citylist"">
-                  <thead>
-                  <tr>
-                    <th class="kepala">Kota Wisata</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
+              <div class="card warna-baru">
+                <div class="card-content white-text">
+                <span class="card-title">Kota Wisata</span>
+                  <table id="tb_citylist" style="margin-top:-20px;">
+                    <thead>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
+          </div>
           `;
 
       $("#data_output").html( tb_header );
@@ -46,7 +49,7 @@ function getCityList() {
           "data": data.kota,
           "columns": [
             { "render": function(data, type, row, meta) {
-                          data = '<div class="collection space"><a class="collection-item" href="wisata.html?id=' + row.k_code +'"><img src="../img/next.png" style="margin:0px 15px -10px 20px;">' + row.nama_kota + '</a></div> ';
+                          data = '<a href="wisata.html?id=' + row.k_code +'"><span style="font-size:26px;margin-right:10px;">&ogt;</span>' + row.nama_kota + '</a> ';
                           return data;
                         } }
           ]
