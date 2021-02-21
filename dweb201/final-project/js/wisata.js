@@ -49,7 +49,7 @@ function getCityList() {
           "data": data.kota,
           "columns": [
             { "render": function(data, type, row, meta) {
-                          data = '<a href="wisata.html?id=' + row.k_code +'"><span style="font-size:26px;margin-right:10px;">&ogt;</span>' + row.nama_kota + '</a> ';
+                          data = '<a href="listwisata.html?id=' + row.k_code +'"><span style="font-size:26px;margin-right:10px;">&ogt;</span>' + row.nama_kota + '</a> ';
                           return data;
                         } }
           ]
