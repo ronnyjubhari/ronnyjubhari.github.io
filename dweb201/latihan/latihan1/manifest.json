@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Makanan Tradisional",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Makanan Tradisional",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
